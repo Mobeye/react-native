@@ -1297,7 +1297,7 @@ var Navigator = React.createClass({
           onResponderTerminationRequest={
             this._handleResponderTerminationRequest
           }>
-          {scenes}
+          {this.props.reverse ? scenes.reverse() : scenes}
         </View>
         {this._renderNavigationBar()}
       </View>
